@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Domain Switcher</title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; object-src 'none'; style-src 'self'">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="header">
+		<h2>Domain Switcher</h2>
+		<button id="addDomain">Add Domain</button>
+	</div>
+
+	<div>
+		<div class="domain-entry">
+			<input type="text" id="domainName" placeholder="Name (e.g., Production)">
+			<input type="text" id="domainUrl" placeholder="Domain (e.g., example.com)">
+			<button id="saveDomain">Save</button>
+		</div>
+	</div>
+
+	<div id="domainList">
+		<!-- Domain entries will be dynamically added here -->
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+
+</html>
